@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+//ブレイクポイントの種類を定義
+$breakpoint: (
+  sp: 'screen and (max-width: 428px)',
+  tab: 'screen and (max-width: 768px)',
+  pc: 'screen and (max-width: 980px)'
+);
+
+//メディアクエリを呼び出す記述
+@mixin mq($bp) {
+  @media #{map-get($breakpoint, $bp)} {
+   @content;
+  }
+}

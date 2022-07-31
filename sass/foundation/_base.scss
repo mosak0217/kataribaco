@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+@use "../global" as g;
+
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: g.$font;
+  line-height: 1.8;
+  letter-spacing: 0.05em;
+  color: g.$color-text;
+  @include g.font-size(14);
+  @include g.mq(tab) {
+  @include g.font-size(13);
+  }
+}
+
+a {
+  transition: 0.3s;
+  text-decoration: none;
+  color: g.$color-primary;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
