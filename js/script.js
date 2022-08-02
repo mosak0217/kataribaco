@@ -37,3 +37,24 @@ var swiper = new Swiper('.swiper-container', {
 	},
 });
 
+// ハンバーガーボタン
+  
+$(function() {
+  $('.hamburger').click(function() {
+      $(this).toggleClass('active');
+
+      if ($(this).hasClass('active')) {
+          $('.globalMenuSp').addClass('active');
+      } else {
+          $('.globalMenuSp').removeClass('active');
+      }
+  });
+});
+
+// メニューが表示されている時に画面をクリックした場合
+$('.header-nav__link').on('click', function() {
+// ativeクラスを削除して、メニューを閉じる
+$('.globalMenuSp, .hamburger').removeClass('active').removeClass;
+});
+
+

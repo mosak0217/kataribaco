@@ -14,3 +14,35 @@
     padding-right: 0;
   }
 
+  .c-sns-icons__list-sp {
+    display: none;
+  }
+
+  @include g.mq(pc) {
+    .header {
+
+      .c-sns-icons__list {
+        display: none;
+      } 
+
+    }
+  
+  }
+
+  @include g.mq(pc) {
+    .header {
+
+     .c-sns-icons__list-sp {
+    display: flex;
+  }
+
+  .c-sns-icons__item {
+    display: inline-block;
+  }
+  .c-sns-icons__item:last-child {
+    padding-right: 0;
+  }
+
+    }
+  
+  }

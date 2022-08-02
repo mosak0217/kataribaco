@@ -7,6 +7,28 @@
 
 }
 
+@include g.mq(pc) {
+  .header-logo {
+    display: none;
+  
+  }
+
+}
+
+.header-nav__sp-logo {
+  display: none;
+
+}
+
+@include g.mq(pc) {
+  .header-nav__sp-logo {
+    display: block;
+    margin-bottom: 40px;
+  
+  }
+
+}
+
 .header-nav__list {
   display: flex;
   flex-direction: column;
@@ -21,14 +43,47 @@
   
 }
 
+@include g.mq(pc) {
+
+  .header-nav__list {
+
+    .header-nav__link {
+      padding-bottom: 40px;
+     
+    }
+  }
+
+}
+
+
+
 .header-nav__link-ja {
   display: block;
   @include g.font-size(18);
   font-family: g.$fontAB;
 }
 
+@include g.mq(pc) {
+
+  .header-nav__link-ja {
+    @include g.font-size(20);
+    letter-spacing: 0.2em;
+  }
+
+
+}
+
 .header-nav__link-en {
   display: block;
   @include g.font-size(14);
   font-family: g.$fontBilo;
+}
+
+@include g.mq(pc) {
+
+  .header-nav__link-en {
+    @include g.font-size(14);
+  }
+
+
 }
