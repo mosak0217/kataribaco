@@ -2,13 +2,18 @@
 
 @use "../global" as g;
 
-  .mv-icon {
+
+.top-bottom-container {
+  position: relative;
+
+  .cake-icon {
     position: absolute;
+    bottom: 40px;
     right: 40px;
     z-index: 2;
-    bottom: -100px;
    
   }
+}
   
     .chara-icon {
       display: block;

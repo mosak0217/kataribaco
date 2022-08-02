@@ -2,8 +2,8 @@
 
 var swiper = new Swiper('.swiper-container', {
 	navigation: {
-	nextButton: '.swiper-button-next',
-  prevButton: '.swiper-button-prev',
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
 
 	},
   slidesPerView: 1,
@@ -29,5 +29,11 @@ var swiper = new Swiper('.swiper-container', {
   scrollbar: {
     el: ".swiper-scrollbar",
   },
+  speed: 1000,
+	effect: "fade",
+	/* これが必要 */
+	fadeEffect: { 
+		crossFade: true
+	},
 });
 

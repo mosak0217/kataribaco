@@ -11,33 +11,43 @@
   margin-right: 80px;
 }
 
-/* 前へ次への矢印カスタマイズ */
 .swiper-button-prev,
 .swiper-button-next {
-  height: 50px;
-  width: 50px;
+  width: 24px; /* ボタンの幅 */
+  height: 40px; /* ボタンの高さ */
+  background-size: 24px 40px; /* 表示したいサイズ */
+  transform: translateY(-50%);
+  margin-top: 0;
 }
-/* 前へ次への矢印カスタマイズ */
+
+/* 次ページボタンのスタイル */
+.swiper-button-next {
+ background-image: url(/img/angle-right-solid.svg);
+}
+
+/* 前ページボタンのスタイル */
+.swiper-button-prev {
+  background-image: url(/img/angle-left-solid.svg);
+}
+
 .swiper-button-prev:after,
 .swiper-button-next:after {
-  background-repeat: no-repeat;
-  background-size: contain;
-  content: "";
-  height: 50px;
-  margin: auto;
-  width: 50px;
-}
-/* 前への矢印カスタマイズ */
-.swiper-button-prev:after {
-  content: '\f104';
-}
-/* 次への矢印カスタマイズ */
-.swiper-button-next:after {
-  content: '\f105';
+ display: none;
 }
 /* 画像サイズ調整 */
 .swiper-slide img {
   height: auto;
   width: 100%;
+}
+
+.swiper-pagination-bullet {
+  width: 12px !important;
+  height: 12px !important;
+  margin: 0 0 0 10px !important;
+  background: g.$color-primary-orange !important;
+}
+
+.swiper-pagination-bullet:first-child {
+  margin: 0 !important;
 }
 
