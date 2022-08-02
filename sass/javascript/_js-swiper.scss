@@ -1,3 +1,43 @@
 @charset "UTF-8";
 
 @use "../global" as g;
+
+.swiper {
+  max-width: 990px;
+}
+
+.swiper-wrapper {
+  margin-top: 80px;
+  margin-right: 80px;
+}
+
+/* 前へ次への矢印カスタマイズ */
+.swiper-button-prev,
+.swiper-button-next {
+  height: 50px;
+  width: 50px;
+}
+/* 前へ次への矢印カスタマイズ */
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  height: 50px;
+  margin: auto;
+  width: 50px;
+}
+/* 前への矢印カスタマイズ */
+.swiper-button-prev:after {
+  content: '\f104';
+}
+/* 次への矢印カスタマイズ */
+.swiper-button-next:after {
+  content: '\f105';
+}
+/* 画像サイズ調整 */
+.swiper-slide img {
+  height: auto;
+  width: 100%;
+}
+

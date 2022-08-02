@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  font-family: g.$font;
+  font-family: g.$fontBilo;
   line-height: 1.8;
   letter-spacing: 0.05em;
   color: g.$color-text;
@@ -32,4 +32,23 @@ img {
   height: auto;
   vertical-align: bottom;
 }
+
+.sec-title-ja {
+  @include g.font-size(30);
+  color: g.$color-primary-orange;
+  text-align: center;
+  padding-top: 140px;
+  font-family: g.$fontAB;
+
+}
+.sec-title-en {
+  @include g.font-size(14);
+  color: g.$color-primary-orange;
+  text-align: center;
+  padding-bottom: 70px;
+  font-family: g.$fontBilo;
+
+}
+
+
 

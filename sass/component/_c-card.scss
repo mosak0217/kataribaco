@@ -1,3 +1,22 @@
 @charset "UTF-8";
 
 @use "../global" as g;
+
+.card {
+  width: 300px;
+}
+
+.card__title {
+  @include g.font-size(18);
+  font-weight: bold;
+  text-align: left;
+  padding-top: 30px;
+  padding-bottom: 30px;
+ 
+}
+.card__text {
+  @include g.font-size(14);
+  line-height: 4;
+  text-align: left;
+ 
+}

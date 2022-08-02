@@ -1,0 +1,44 @@
+
+@charset "UTF-8";
+
+@use "../global" as g;
+
+
+#character {
+  background: g.$color-primary-blue;
+}
+
+
+.character-inner {
+  margin: 0 20px;
+  text-align: center;
+  background: g.$color-primary;
+  display: grid;
+  grid-template-columns: 1fr  1fr;
+  justify-items: center;
+  align-items: center;
+  grid-gap: 100px;
+ 
+}
+
+#character {
+  .sec-title-ja {
+    background: g.$color-primary;
+    margin: 0 20px;
+
+  }
+  .sec-title-en {
+    background: g.$color-primary;
+    margin: 0 20px;
+
+  }
+}
+
+.character-inner {
+
+  .card {
+    padding-bottom: 60px;
+  }
+ 
+ 
+}

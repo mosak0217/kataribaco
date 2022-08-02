@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+@use "../global" as g;
+
+#productsr {
+  background: g.$color-primary-blue;
+ 
+
+  .productsr-inner {
+    text-align: center;
+    background: g.$color-primary;
+  }
+
+}
+#productsr {
+
+  .productsr-inner__img {
+    padding: 60px 16px 40px 16px;
+
+  }
+
+}
+
+.productsr-inner__text {
+  line-height: 4;
+}
+
+

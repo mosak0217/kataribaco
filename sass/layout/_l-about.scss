@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+@use "../global" as g;
+
+#about {
+  padding-top: 140px;
+  font-family: g.$fontBilo;
+
+  .wrapper {
+    .main-img {
+      padding-bottom: 70px;  
+    }
+  } 
+}
+
+.about__text {
+  line-height: 4;
+  font-family: g.$fontBilo;
+}
+
+#about {
+  .bg-img {
+    background-image: url(/img/about-img.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+  
+    }
+}
+
+

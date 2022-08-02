@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+@use "../global" as g;
+
+  .mv-icon {
+    position: absolute;
+    right: 40px;
+    z-index: 2;
+    bottom: -100px;
+   
+  }
+  
+    .chara-icon {
+      display: block;
+      text-align: right;
+      padding-right: 179px;
+  
+    }
+
+
+
+

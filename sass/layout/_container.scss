@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+@use "../global" as g;
+
+.wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 15px;
+  padding-bottom: 50px;
+  
+
+}
+
+.top-inner {
+  max-width: 1440px;
+ position: relative;
+ padding-bottom: 154px;
+}

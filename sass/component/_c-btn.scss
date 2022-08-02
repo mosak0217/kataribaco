@@ -1,3 +1,48 @@
 @charset "UTF-8";
 
 @use "../global" as g;
+
+.c-btn {
+  /* ボタンのCSS */
+  max-width: 400px;
+  @include g.font-size(18);
+  background-color: g.$color-primary;
+  border-radius: 8px;
+  color: g.$color-primary-orange;
+  border: 1px solid  g.$color-primary-orange;
+  display: block;
+  padding: 28px 120px;
+  position: relative; /* position: relative;で矢印の位置を基点とさせます */
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  border-radius: 50px;
+  font-family: g.$fontBilo;
+}
+
+.c-btn::after{
+  /* 擬似要素で矢印アイコンをつくる */
+  content: '';
+  border: 0;
+  border-top: solid 1px g.$color-primary-orange;
+  border-right: solid 1px g.$color-primary-orange;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  /* 矢印アイコンの位置を設定 */
+  position: absolute;
+  top: 50%;
+  right: 35px;
+  transform: translateY(-50%) rotate(45deg); /* rotate(45deg)で矢印を回転（向きを変更）させる */
+  transition: 0.3s;
+}
+
+.c-btn:hover {
+  opacity: 1;
+}
+
+.c-btn:hover::after {
+  right: 1.2rem;
+  transition: 0.3s;
+}
+

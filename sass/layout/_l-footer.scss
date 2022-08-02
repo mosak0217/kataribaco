@@ -1,3 +1,30 @@
 @charset "UTF-8";
 
 @use "../global" as g;
+
+.l-footer {
+  background: g.$color-primary-blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: g.$fontBilo;
+
+}
+.l-footer {
+
+  .c-sns-icons {
+    padding-top: 108px;
+    padding-bottom: 83px;
+
+  }
+
+  .copy-right {
+    padding-bottom: 70px;
+    @include g.font-size(12);
+
+  }
+ 
+
+
+}

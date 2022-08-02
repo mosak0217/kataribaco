@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+@use "../global" as g;
+
+.header-logo {
+  margin-bottom: 50px;
+
+}
+
+.header-nav__list {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  
+
+  .header-nav__link {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 70px;
+  }
+  
+}
+
+.header-nav__link-ja {
+  display: block;
+  @include g.font-size(18);
+  font-family: g.$fontAB;
+}
+
+.header-nav__link-en {
+  display: block;
+  @include g.font-size(14);
+  font-family: g.$fontBilo;
+}

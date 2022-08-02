@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+@use "../global" as g;
+
+
+  .c-sns-icons__list {
+    display: flex;
+  }
+
+  .c-sns-icons__item {
+    padding-right: 24px;
+  }
+  .c-sns-icons__item:last-child {
+    padding-right: 0;
+  }
+

@@ -2,17 +2,19 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta discription="KATARIBACO" content="KATARIBACOのデザインサイト">
+  <meta name="discription" content="KATARIBACO">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="/css/swiper.css">
+  <link rel="stylesheet" href="css/swiper.css">
   <link rel="stylesheet" href="css/aos.css">
+  <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <script src="js/aos.js" defer></script>
   <link rel="icon" href="img/sp-logo.png">
   <title>KATARIBACO</title>
 </head>
 <body>
+
   <header id="header" class="l-header header">
     <h1 class="header-logo"><a href="#"><img src="img/header-logo.png" alt="ヘッダーロゴ画像"></a></h1><!--header-logo-->
 
@@ -24,36 +26,36 @@
 
     <nav class="header-nav">
       <ul class="header-nav__list">
-        <li class="header-nav__link"><a href="#about">
-          <span class="header-nav__link-ja">カタリバコとは</span>
-          <span class="header-nav__link-en">About me</span>
-        </a></li><!--header-nav__item-->
-        <li class="header-nav__link"><a href="#productsr">
-          <span class="header-nav__link-ja">お取り扱い</span>
-          <span class="header-nav__link-en">Productsr</span>
-        </a></li><!--header-nav__item-->
-        <li class="header-nav__link"><a href="#contact">
-          <span class="header-nav__link-ja">お問い合わせ</span>
-          <span class="header-nav__link-en">Contact</span>
-        </a></li><!--header-nav__item-->
+            <li class="header-nav__link"><a href="#about">
+              <span class="header-nav__link-ja">カタリバコとは</span>
+              <span class="header-nav__link-en">About me</span>
+            </a></li><!--header-nav__item-->
+            <li class="header-nav__link"><a href="#productsr">
+              <span class="header-nav__link-ja">お取り扱い</span>
+              <span class="header-nav__link-en">Productsr</span>
+            </a></li><!--header-nav__item-->
+            <li class="header-nav__link"><a href="#contact">
+              <span class="header-nav__link-ja">お問い合わせ</span>
+              <span class="header-nav__link-en">Contact</span>
+            </a></li><!--header-nav__item-->
 
       </ul><!--header-nav__list-->
     </nav><!--header-nav-->
 
-    <div class="sns-icons">
+    <div class="c-sns-icons">
 
-      <ul class="sns-icons__list">
-        <li class="sns-icons__item"><a href="https://www.instagram.com/kataribaco/"><img src="img/insta-icon.png" alt="インスタアイコン画像"></a></li>
-        <li class="sns-icons__item"><a href="https://note.com/kataribaco"><img src="img/note-icon.png" alt="noteアイコン画像"></a></li>
-        <li class="sns-icons__item"><a href="https://www.youtube.com/channel/UCFM7L7_hhrsB6njInrdBueQ"><img src="img/youtube-icon.png" alt="YouTubeアイコン画像"></a></li>
-        <li class="sns-icons__item"><a href="https://www.pinterest.jp/kataribaco/_created/"><img src="img/pinterest-icon.png" alt="ピンタレストアイコン画像"></a></li>
-      </ul><!--sns-icons__list-->
-    </div><!--sns-icons__icons-->
+      <ul class="c-sns-icons__list">
+        <li class="c-sns-icons__item"><a href="https://www.instagram.com/kataribaco/"><img src="img/insta-icon.png" alt="インスタアイコン画像"></a></li>
+        <li class="c-sns-icons__item"><a href="https://note.com/kataribaco"><img src="img/note-icon.png" alt="noteアイコン画像"></a></li>
+        <li class="c-sns-icons__item"><a href="https://www.youtube.com/channel/UCFM7L7_hhrsB6njInrdBueQ"><img src="img/youtube-icon.png" alt="YouTubeアイコン画像"></a></li>
+        <li class="c-sns-icons__item"><a href="https://www.pinterest.jp/kataribaco/_created/"><img src="img/pinterest-icon.png" alt="ピンタレストアイコン画像"></a></li>
+      </ul><!--c-sns-icons__list-->
+    </div><!--c-sns-icons-->
   </header><!--header-->
 
   <main class="l-main">
     <section id="mv" class="mv">
-      <div class="mv-inner l-main">
+      <div class="mv-inner">
         
         <!-- スライダーのコンテナ -->
 <div class="swiper">
@@ -69,17 +71,23 @@
       <!-- ナビボタン -->
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
+
+       <!-- スクロールバー -->
+      <div class="swiper-scrollbar"></div>
 </div>
 
 <div class="mv-icon"><img src="img/cake.png" alt="ケーキアイコン"></div>
 
-<div class="scroll-down"><span>Scroll</span></div>
+    <a class="scroll-down" href="#"><span></span>Scroll</a>
 
-      </div> <!-- mv-inner l-main -->
+      </div> <!-- mv-inner -->
     </section> <!-- mv -->
+
+  
 
     <section id="info" class="info">
       <div class="wrapper">
+
 
         <h2 class="sec-title-ja">お知らせ</h2>
         <h3 class="sec-title-en">Information</h3>
@@ -93,46 +101,45 @@
           <dd class="infolist__text">ダミーダミーダミーダミーダミーダミーダミーダミー</dd>
         </dl>
 
-        <button class="btn"><a href="https://note.com/kataribaco">And more</a></button>
+        <button class="c-btn"><a href="https://note.com/kataribaco">And more</a></button>
       </div><!-- wrapper -->
     </section><!-- info-->
 
     <section id="about" class="about">
       <div class="wrapper">
 
-      </div><!-- wrapper -->
       <div class="main-img"><img src="img/main-img.jpg" alt=""></div><!--main-img-->
 
-          <p class="about__text">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミ</p>
-          <p class="about__text">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミ</p>
-          <p class="about__text">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミ</p>
-          <p class="about__text">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミ</p>
-          <p class="about__text">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミ</p>
-          <p class="about__text">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミ</p>
-          <p class="about__text">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミ</p>
-          <p class="about__text">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミ</p>
-          <p class="about__text">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミ</p>
-          <p class="about__text">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミ</p>
-          <p class="about__text">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミ</p>
-          <p class="about__text">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミ</p>
-          <p class="about__text">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミ</p>
-          <p class="about__text">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミ</p>
-          <p class="about__text">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミ</p>
-          <p class="about__text">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミ</p>
-          <p class="about__text">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミ</p>
-          <p class="about__text">ミーダミーダミーダミーダミーダミーダミーダミーダミーダミー</p><!-- about__text -->
+            <p class="about__text">
+            ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミ
+            ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミ
+            ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミ
+            ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミ
+            ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミ
+            ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミ
+            ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミ
+            ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミ
+            ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミ
+            ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミ
+            ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミ
+            ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミ
+            ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミ
+            ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミ
+            ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミ
+            ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミ
+            ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミ
+            ミーダミーダミーダミーダミーダミーダミーダミーダミーダミー</p><!-- about__text -->
 
-          <div class="about-icon"><img src="img/character-1.png" alt="キャラクター1画像"></div>
+        </div><!-- wrapper -->
+
+        <div class="chara-icon"><img src="img/character-1.png" alt="キャラクター1画像"></div>
 
           <div class="bg-img"></div>
-
-          <div></div>
-
     </section><!-- about-->
 
     <section id="productsr" class="productsr">
 
-      <div class="wrapper">
+      <div class="main-inner">
 
         <h2 class="sec-title-ja">お取り扱い</h2>
         <h3 class="sec-title-en">Productsr</h3>
@@ -148,12 +155,10 @@
           <p class="productsr-inner__text">カラスさんのお手伝いをはじめます。</p>
 
         </div><!-- productsr-inner -->
-      </div><!-- wrapper -->
     </section><!-- productsr-->
 
     <section id="character" class="character">
 
-      <div class="wrapper">
 
       <h2 class="sec-title-ja">キャラクター</h2>
         <h3 class="sec-title-en">Character</h3>
@@ -198,40 +203,38 @@
 
         </div><!-- character-inner -->
 
-        </div><!-- wrapper -->
     </section><!-- character-->
 
     <section id="sale" class="sale">
 
-      <div class="wrapper">
 
         <h2 class="sec-title-ja">販売商品</h2>
           <h3 class="sec-title-en">Sale</h3>
 
           <div class="sale-inner">
 
-      <div class="card"><a href="#character">
+      <div class="card"><a href="https://minne.com/items/33231751">
         <img src="img/sale.jpg" alt="販売商品画像">
         <h3 class="card__title">ダミーダミーダミー</h3><!-- card__title -->
-        <p class="card__text">＊＊＊円</p><!-- card__text -->
+        <p class="card__text">9999円</p><!-- card__text -->
       </a></div><!-- card -->
 
-      <div class="card"><a href="#character">
+      <div class="card"><a href="https://minne.com/items/33231751">
         <img src="img/sale.jpg" alt="販売商品画像">
         <h3 class="card__title">ダミーダミーダミー</h3><!-- card__title -->
-        <p class="card__text">＊＊＊円</p><!-- card__text -->
+        <p class="card__text">9999円</p><!-- card__text -->
       </a></div><!-- card -->
 
-      <div class="card"><a href="#character">
+      <div class="card"><a href="https://minne.com/items/33231751">
         <img src="img/sale.jpg" alt="販売商品画像">
         <h3 class="card__title">ダミーダミーダミー</h3><!-- card__title -->
-        <p class="card__text">＊＊＊円</p><!-- card__text -->
+        <p class="card__text">9999円</p><!-- card__text -->
       </a></div><!-- card -->
 
-    </div><!-- sale__title -->
-     </div><!-- wrapper -->
+    </div><!-- sale__inner -->
+     </div><!-- main-inner -->
 
-     <div class="about-icon"><img src="img/character-4.png" alt="キャラクター4画像"></div>
+     <div class="chara-icon"><img src="img/character-4.png" alt="キャラクター4画像"></div>
 
      <div class="bg-img"></div>
 
@@ -245,30 +248,30 @@
           <h3 class="sec-title-en">Contact</h3>
 
           <p class="contact-dialog">こちらから必要事項をご記入の上、お送りください。</p>
-          <p class="contact-dialog">※返信に時間を要する場合がございます。何卒ご了承ください。<span>・</span><span>は入力必須です</span></p>
+          <p class="contact-dialog">※返信に時間を要する場合がございます。何卒ご了承ください。<span>・</span><div class="contact-dialog-bold">は入力必須です</div></p>
 
-      <form class="form">
+      <form action="mosak0217@gmail.com" method="post" class="form">
         <div class="form-item">
-          <label class="form-item-label">お名前</label>
-          <input type="text" class="form-item-input" placeholder="お名前">
+          <label for="name" class="form-item-label">お名前</label>
+          <input type="text"  id="name" name="name" class="form-item-input" placeholder="お名前">
         </div>
         <div class="form-item">
-          <p class="form-item-label">メールアドレス</p>
-          <input type="email" class="form-item-input" placeholder="メールアドレス">
+          <label for="mail" class="form-item-label">メールアドレス</label>
+          <input type="mail" id="mail" name="mail" class="form-item-input" placeholder="メールアドレス">
         </div>
         <div class="form-item">
-          <p class="form-item-Label">電話番号</p>
-          <input type="text" class="form-item-input" placeholder="電話番号">
+          <label for="number" class="form-item-label number">電話番号</label>
+          <input type="text" id="number" name="number" class="form-item-input" placeholder="電話番号">
         </div>
         <div class="form-item">
-          <p class="form-item-label">お問い合わせ内容</p>
-          <textarea class="form-item-textarea" placeholder="お問い合わせ内容を入力して下さい"></textarea>
+          <label for="message" class="form-item-label">お問い合わせ内容</label>
+          <textarea  id="message" name="message" class="form-item-textarea" placeholder="お問い合わせ内容を入力して下さい"></textarea>
         </div>
 
-        <p class="contact-dialog">ここでご入力いただきました個人情報については、
+        <p class="contact-dialog-bottom">ここでご入力いただきました個人情報については、<br>
           お問い合わせに対しての連絡のみに使用させていただきます。</p>
 
-        <button class="btn"><input type="submit" value="送信する"></button>
+        <button class="c-btn"><input type="submit" value="メッセージを送る"></button>
 
       </form>
 
@@ -277,23 +280,23 @@
   </main>
   <footer id="footer" class="footer l-footer">
 
-    <div class="sns-icons">
+    <div class="c-sns-icons">
 
-      <ul class="sns-icons__list">
-        <li class="sns-icons__item"><a href="https://www.instagram.com/kataribaco/"><img src="img/insta-icon.png" alt="インスタアイコン画像"></a></li>
-        <li class="sns-icons__item"><a href="https://note.com/kataribaco"><img src="img/note-icon.png" alt="noteアイコン画像"></a></li>
-        <li class="sns-icons__item"><a href="https://www.youtube.com/channel/UCFM7L7_hhrsB6njInrdBueQ"><img src="img/youtube-icon.png" alt="YouTubeアイコン画像"></a></li>
-        <li class="sns-icons__item"><a href="https://www.pinterest.jp/kataribaco/_created/"><img src="img/pinterest-icon.png" alt="ピンタレストアイコン画像"></a></li>
-      </ul><!--sns-icons__list-->
-
-    </div><!--sns-icons__icons-->
+      <ul class="c-sns-icons__list">
+        <li class="c-sns-icons__item"><a href="https://www.instagram.com/kataribaco/"><img src="img/insta-icon.png" alt="インスタアイコン画像"></a></li>
+        <li class="c-sns-icons__item"><a href="https://note.com/kataribaco"><img src="img/note-icon.png" alt="noteアイコン画像"></a></li>
+        <li class="c-sns-icons__item"><a href="https://www.youtube.com/channel/UCFM7L7_hhrsB6njInrdBueQ"><img src="img/youtube-icon.png" alt="YouTubeアイコン画像"></a></li>
+        <li class="c-sns-icons__item"><a href="https://www.pinterest.jp/kataribaco/_created/"><img src="img/pinterest-icon.png" alt="ピンタレストアイコン画像"></a></li>
+      </ul><!--c-sns-icons__list-->
+    </div><!--c-sns-icons-->
 
     <p class="copy-right">© KATARIBACO</p>
 
   </footer><!-- footer-->
 
+  
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-<script src="js/swiper.js"></script>
-<script src="js/script.js"></script>
+  <script src="js/swiper.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
