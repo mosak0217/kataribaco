@@ -83,6 +83,7 @@
 
   .header-nav__link-en {
     @include g.font-size(14);
+    letter-spacing: .2em;
   }
 
 
