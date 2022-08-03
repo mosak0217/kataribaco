@@ -93,9 +93,10 @@
 
 #sale {
   .bg-img {
-    background-image: url(/img/sale-background.jpg);
+    background-image: url(img/sale-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover;
-    background-position: center;
     height: 500px;
   }
   
