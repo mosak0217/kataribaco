@@ -10,15 +10,51 @@
 
 .sale-inner {
   margin: 0 20px;
-  text-align: center;
   background: g.$color-primary;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
-  align-items: center;
+  display: flex;
+  justify-content: center;
   grid-gap: 35px;
+  padding: 0 20px;
  
 }
+
+.sale-inner {
+
+  .card:nth-child(4) {
+
+    display: none;
+  }
+      
+}
+
+@include g.mq(tab) {
+
+  .sale-inner {
+    flex-wrap: wrap;
+    
+
+    .card:nth-child(4) {
+      display: block;
+      opacity: 0;
+      
+    }
+
+  }
+
+}
+
+@include g.mq(sale) {
+
+  .sale-inner {
+
+    .card:nth-child(4) {
+      display: none;
+      
+    }
+
+  }
+}
+
 
 #sale {
   .sec-title-ja {

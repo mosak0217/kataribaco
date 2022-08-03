@@ -21,6 +21,14 @@
  
 }
 
+@include g.mq(pc) {
+  .character-inner {
+    grid-template-columns: 1fr;
+    
+  }
+
+}
+
 #character {
   .sec-title-ja {
     background: g.$color-primary;
@@ -35,10 +43,25 @@
 }
 
 .character-inner {
+  grid-gap: 0;
 
   .card {
     padding-bottom: 60px;
   }
  
  
+}
+
+@include g.mq(sp) {
+
+  .character-inner {
+
+    .card {
+      width: 200px;
+      
+    }
+   
+   
+  }
+
 }

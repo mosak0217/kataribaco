@@ -4,9 +4,11 @@
 
 
 .top-bottom-container {
+  width: 100%;
   position: relative;
 
   .cake-icon {
+    display: inline-block;
     position: absolute;
     bottom: 40px;
     right: 40px;
@@ -14,12 +16,38 @@
    
   }
 }
+
+@include g.mq(pc) {
+  .top-bottom-container {
   
+    .cake-icon {
+     
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+     
+    }
+  }
+
+}
+
+
     .chara-icon {
       display: block;
       text-align: right;
       padding-right: 179px;
   
+    }
+
+    @include g.mq(cara) {
+      .chara-icon {
+
+        padding: 0;
+        text-align: center;
+      }
     }
 
 

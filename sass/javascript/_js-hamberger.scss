@@ -6,6 +6,10 @@
   display: none;
 }
 
+.hamburger-background {
+  display: none;
+}
+
 @include g.mq(pc) {
 
   /*　ハンバーガーボタン　*/
@@ -14,7 +18,7 @@
     position: fixed;
     z-index: 8;
     right: 18px;
-    top: 19px;
+    top: 17px;
     width: 42px;
     height: 42px;
     cursor: pointer;
@@ -24,23 +28,23 @@
     display: block;
     position: fixed;
     z-index: 4;
-    right: 40px;
+    right: 21px;
     top: 5px;
     width: 56px;
     height: 56px;
     cursor: pointer;
-    background-image: url(img/hamburger.png);
   }
     
 
   .hamburger span {
     display: block;
     position: absolute;
-    width: 11px;
+    width: 10px;
     height: 1px;
     left: 6px;
     background: g.$color-primary-orange;
     transition: 0.3s ease-in-out;
+    z-index: 5;
   }
   .hamburger span:nth-child(1) {
     top: 10px;
@@ -53,14 +57,14 @@
   }
   /* ナビ開いてる時のボタン */
   .hamburger.active span:nth-child(1) {
-    top: 16px;
+    top: 13px;
     left: 6px;
     background: g.$color-primary-orange;
     transform: rotate(-45deg);
   }
   .hamburger.active span:nth-child(2),
   .hamburger.active span:nth-child(3) {
-    top: 16px;
+    top: 13px;
     background: g.$color-primary-orange;
     transform: rotate(45deg);
   }

@@ -20,10 +20,12 @@
 
 #about {
   .bg-img {
-    background-image: url(img/about-img.jpg);
+    background-image: url(/img/about-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover;
-    background-position: center;
     height: 500px;
+  
   
     }
 }

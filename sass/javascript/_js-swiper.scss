@@ -11,6 +11,12 @@
   margin-right: 80px;
 }
 
+@include g.mq(pc) {
+  .swiper-wrapper {
+    margin: 0;
+  }
+}
+
 .swiper-button-prev,
 .swiper-button-next {
   width: 24px; /* ボタンの幅 */
@@ -34,7 +40,7 @@
 .swiper-button-next:after {
  display: none;
 }
-/* 画像サイズ調整 */
+
 .swiper-slide img {
   height: auto;
   width: 100%;

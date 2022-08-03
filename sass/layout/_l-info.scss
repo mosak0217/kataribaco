@@ -46,3 +46,30 @@
   }
 }
 
+@include g.mq(sp) {
+
+  .info-list {
+    flex-direction: column;
+  }
+
+  .info-list .infolist__time {
+    padding-bottom: 0; 
+    padding-left: 0; 
+    border-bottom: none; 
+}
+.info-list .infolist__text {
+  width: 100%;
+  @include g.font-size(12);
+}
+
+#info {
+  .c-btn {
+    padding: 0;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+}
+
+
+}
+
