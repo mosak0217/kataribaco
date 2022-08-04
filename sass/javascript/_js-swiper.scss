@@ -7,14 +7,16 @@
 }
 
 .swiper-container {
-  
+  margin-top: 85px;
+}
+@include g.mq(pc) {
+  .swiper-container {
+    margin-top: 0;
+  }
+
 }
 
 .swiper-wrapper {
-  margin-top: 80px;
-  margin-right: 80px;
-}
-
 @include g.mq(pc) {
   .swiper-wrapper {
     margin: 0;
@@ -24,12 +26,15 @@
   .swiper-wrapper {
     height: 100vw !important;
   }
+  
 }
 @include g.mq(tab) {
   .swiper-slide img {
     height: 100vw !important;
   }
 }
+}
+
 
 .swiper-button-prev,
 .swiper-button-next {

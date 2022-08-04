@@ -57,4 +57,6 @@ $('.header-nav__link').on('click', function() {
 $('.globalMenuSp, .hamburger').removeClass('active').removeClass;
 });
 
+AOS.init();
+
 
