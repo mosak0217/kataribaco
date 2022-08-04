@@ -6,7 +6,8 @@ $breakpoint: (
   tab: 'screen and (max-width: 768px)',
   pc: 'screen and (max-width: 1390px)',
   sale: 'screen and (max-width: 535px)',
-  cara: 'screen and (max-width: 500px)'
+  cara: 'screen and (max-width: 500px)',
+  big: 'screen and (min-width: 1600px)'
 );
 
 //メディアクエリを呼び出す記述

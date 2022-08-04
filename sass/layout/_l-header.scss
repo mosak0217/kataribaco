@@ -11,9 +11,15 @@
 
 }
 
+
 @include g.mq(pc) {
   .l-header {
     padding: 0;
+  }
+}
+@include g.mq(big) {
+  .l-header {
+    padding: 85px 85px 0 250px;
   }
 }
 
