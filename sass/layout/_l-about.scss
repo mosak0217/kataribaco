@@ -30,4 +30,14 @@
     }
 }
 
+@include g.mq(tab) {
+  #about {
+    .bg-img {
+      height: 240px;
+    
+      }
+  }
+
+}
+
 

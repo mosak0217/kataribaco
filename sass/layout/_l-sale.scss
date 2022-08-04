@@ -112,3 +112,13 @@
   }
   
 }
+
+@include g.mq(tab) {
+  #sale {
+    .bg-img {
+      height: 240px;
+    }
+    
+  }
+
+}
