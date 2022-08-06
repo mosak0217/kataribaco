@@ -71,7 +71,14 @@
 .swiper-slide img {
   height: auto;
   width: 100%;
+  border-radius: 30px;
 }
+@include g.mq(pc) {
+  .swiper-slide img {
+    border-radius: 0px;
+  }
+}
+
 
 .swiper-pagination-bullet {
   width: 12px !important;

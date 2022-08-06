@@ -59,4 +59,29 @@ $('.globalMenuSp, .hamburger').removeClass('active').removeClass;
 
 AOS.init();
 
+$(function() {
+  var topBtn = $('.header-nav, .sns-icons-header');    
+  topBtn.hide();
+  //スクロールが100に達したらボタン表示
+  $(window).scroll(function () {
+      if ($(this).scrollTop() > 80) {
+          topBtn.slideUp();
+      } else {
+          topBtn.slideDown();
+      }
+  });
+});
+
+$(function() {
+  $('.header-logo').click(function() {
+      $(this).toggleClass('logo-active');
+
+      if ($(this).hasClass('logo-active')) {
+          $('.header-nav, .sns-icons-header').slideDown();
+      } else {
+          $('.header-nav, .sns-icons-header').slideUp();
+      }
+  });
+});
+
 

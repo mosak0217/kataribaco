@@ -8,6 +8,8 @@
   align-items: center;
   float: left;
   padding: 85px 85px 0 85px;
+  position: fixed;
+  z-index: 2;
 
 }
 
@@ -20,6 +22,23 @@
 @include g.mq(big) {
   .l-header {
     padding: 85px 85px 0 250px;
+  }
+}
+
+.display-none {
+  display: none;
+}
+
+.logo-active {
+  display: block;
+  animation: appear .5s ease;
+}
+@keyframes appear {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
   }
 }
 
