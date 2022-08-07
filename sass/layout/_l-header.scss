@@ -29,9 +29,17 @@
   display: none;
 }
 
+.scroll-active {
+  display: block;
+  animation: appear .5s ease;
+  transform: translateY(-70px);
+
+}
+
 .logo-active {
   display: block;
   animation: appear .5s ease;
+  transform: translateY(-70px);
 }
 @keyframes appear {
   0%{
