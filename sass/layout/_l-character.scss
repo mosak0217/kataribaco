@@ -13,21 +13,22 @@
   margin: 0 20px;
   text-align: center;
   background: g.$color-primary;
-  display: grid;
-  grid-template-columns: 1fr  1fr;
-  justify-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  grid-gap: 100px;
+
+  .card {
+    .card__title {
+      text-align: center;
+    }
+    .card__text {
+      text-align: none;
+    }
+  }
  
 }
 
-@include g.mq(pc) {
-  .character-inner {
-    grid-template-columns: 1fr;
-    
-  }
-
-}
 
 #character {
   .sec-title-ja {
@@ -47,17 +48,28 @@
 
   .card {
     padding-bottom: 60px;
+    width: calc(50% - 50px);
+    padding: 0 232px;
+    padding-bottom: 40px;
+    
   }
+  .card-right {
+    padding-left: 20px;
+  }
+  .card-left {
+    padding-right: 20px;
+  }
+  
  
  
 }
-
-@include g.mq(sp) {
+@include g.mq(cara) {
 
   .character-inner {
 
     .card {
-      width: 200px;
+      padding: 0 30px;
+      padding-bottom: 40px;
       
     }
    
@@ -65,3 +77,19 @@
   }
 
 }
+@include g.mq(tab) {
+
+  .character-inner {
+
+    .card {
+      width: 100%;
+      padding: 0 10px;
+      padding-bottom: 40px;
+      
+    }
+   
+   
+  }
+
+}
+

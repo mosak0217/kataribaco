@@ -2,17 +2,21 @@
 
 @use "../global" as g;
 
+
+
 .top-bottom-container {
   width: 100%;
+  max-width: 990px;
   height: 154px;
-  position: relative;
+  // position: relative;
+  margin: 0 auto;
 
   .scroll-down {
     display: block;
     text-align: center;
     position: absolute;
     top: 30px;
-    left: 50%;
+    left: 47%;
     color: g.$color-primary-orange;
     @include g.font-size(18);
     animation: move-y .5s infinite alternate ease-in-out;
@@ -32,7 +36,7 @@
     @include g.font-size(18);
     position: absolute;
     top: 76px;
-    left: 50%;
+    left: 47%;
   }
 
   @include g.mq(pc) {

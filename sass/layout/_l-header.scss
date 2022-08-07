@@ -19,11 +19,11 @@
     padding: 0;
   }
 }
-@include g.mq(big) {
-  .l-header {
-    padding: 85px 85px 0 250px;
-  }
-}
+// @include g.mq(big) {
+//   .l-header {
+//     padding: 85px 85px 0 250px;
+//   }
+// }
 
 .display-none {
   display: none;
@@ -33,6 +33,7 @@
   display: block;
   animation: appear .5s ease;
   transform: translateY(-70px);
+  z-index: -1;
 
 }
 

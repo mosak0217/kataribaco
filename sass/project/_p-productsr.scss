@@ -9,6 +9,10 @@
   .productsr-inner {
     text-align: center;
     background: g.$color-primary;
+
+    img {
+      border-radius: 30px;
+    }
   }
 
 }
