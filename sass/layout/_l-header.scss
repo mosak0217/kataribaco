@@ -25,29 +25,33 @@
 //   }
 // }
 
-.display-none {
-  display: none;
-}
-
-.scroll-active {
-  display: block;
-  animation: appear .5s ease;
-  transform: translateY(-70px);
-  z-index: -1;
-
-}
-
-.logo-active {
-  display: block;
-  animation: appear .5s ease;
-  transform: translateY(-70px);
-}
-@keyframes appear {
-  0%{
-    opacity: 0;
+@include g.mq(big) {
+ 
+  .display-none {
+    display: none;
   }
-  100%{
-    opacity: 1;
+  
+  .scroll-active {
+    display: block;
+    animation: appear .5s ease;
+    transform: translateY(-70px);
+    z-index: -1;
+  
+  }
+  
+  .logo-active {
+    display: block;
+    animation: appear .5s ease;
+    transform: translateY(-70px);
+  }
+  @keyframes appear {
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
   }
 }
+
 
