@@ -4,6 +4,7 @@
 
 .swiper {
   max-width: 990px;
+  margin-right: 0 !important;
 }
 @include g.mq(pc) {
   .swiper {

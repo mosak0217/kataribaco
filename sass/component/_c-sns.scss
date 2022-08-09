@@ -5,14 +5,103 @@
 
   .c-sns-icons__list {
     display: flex;
+    align-items: center;
+    
   }
+  
 
   .c-sns-icons__item {
     padding-right: 24px;
+    transition: 0.3s;
   }
   .c-sns-icons__item:last-child {
     padding-right: 0;
   }
+
+  .c-sns-icons__item:hover {
+    transform: translateY(-50%);
+    
+  }
+
+  .c-sns-icons__item-insta {
+    background-image: url(../img/insta-icon-min.png);
+    background-repeat:no-repeat; 
+    width: 24px;
+    height: 24px;
+    margin-right: 24px;
+    transition-property: transform;/*アニメーションをtransformのプロパティのみ適用*/
+    transition-duration: 0.3s;
+
+    a {
+      display: block;
+      width: 24px;
+      height: 24px;
+
+    }
+  }
+
+  .c-sns-icons__item-insta:hover {
+    background-image: url(../img/insta-sp-min.png);
+    transform: translateY(-50%);
+  }
+  .c-sns-icons__item-note {
+    background-image: url(../img/note-icon-min.png);
+    background-repeat:no-repeat; 
+    width: 24px;
+    height: 24px;
+    margin-right: 24px;
+    transition-duration: 0.3s;
+    a {
+      display: block;
+      width: 24px;
+      height: 24px;
+
+    }
+  }
+  .c-sns-icons__item-note:hover {
+    background-image: url(../img/note-sp-min.png);
+    transform: translateY(-50%);
+  }
+  .c-sns-icons__item-youtube {
+    background-image: url(../img/youtube-icon-min.png);
+    background-repeat:no-repeat; 
+    width: 30px;
+    height: 20px;
+    margin-right: 24px;
+    transition-duration: 0.3s;
+    a {
+      display: block;
+      width: 24px;
+      height: 24px;
+
+    }
+  }
+  .c-sns-icons__item-youtube:hover {
+    background-image: url(../img/youtube-sp-min.png);
+    transform: translateY(-50%);
+  }
+  .c-sns-icons__item-pinterest {
+    background-image: url(../img/pinterest-icon-min.png);
+    width: 24px;
+    height: 24px;
+    transition-duration: 0.3s;
+    a {
+      display: block;
+      width: 24px;
+      height: 24px;
+
+    }
+    
+  }
+  .c-sns-icons__item-pinterest:hover {
+    background-image: url(../img/pinterest-sp-min.png);
+    transform: translateY(-50%);
+  }
+
+
+
+
+ 
 
   .c-sns-icons__list-sp {
     display: none;
