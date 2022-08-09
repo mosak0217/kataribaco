@@ -5,6 +5,12 @@
 .swiper {
   max-width: 990px;
 }
+@include g.mq(pc) {
+  .swiper {
+    max-width: 1600px;
+  }
+
+}
 
 .swiper-container {
   margin-top: 85px;
@@ -30,13 +36,13 @@
     margin: 0;
   }
 }
-@include g.mq(tab) {
+@include g.mq(swiper) {
   .swiper-wrapper {
     height: 100vw !important;
   }
   
 }
-@include g.mq(tab) {
+@include g.mq(swiper) {
   .swiper-slide img {
     height: 130vw !important;
   }
@@ -76,6 +82,12 @@
 @include g.mq(pc) {
   .swiper-slide img {
     border-radius: 0px;
+    height: 100vh;
+    margin: auto;
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    width: 100%;
   }
 }
 

@@ -8,6 +8,13 @@
   max-width: 1300px;
   margin: 0 auto;
 }
+@include g.mq(pc) {
+  .mv-inner {
+  max-width: 1600px;
+  margin: 0;
+  width: 100%;
+  }
+}
 
 .main-inner {
   width: 100%;
