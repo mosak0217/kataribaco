@@ -38,6 +38,18 @@ var swiper = new Swiper('.swiper-container', {
 });
 
 // ハンバーガーボタン
+
+$(function() {
+  $('.hamburger').click(function() {
+      $(this).toggleClass('active');
+
+      if ($(this).hasClass('active')) {
+          $('.globalMenuSp').addClass('active');
+      } else {
+          $('.globalMenuSp').removeClass('active');
+      }
+  });
+});
   
 
 
@@ -62,21 +74,14 @@ AOS.init();
 
 
 
+
+
+
 $(window).on('load resize', function(){
   let w = $(window).width();
   if(w <= 1600){
     // ウィンドウサイズ1600px以下のときの処理
-    $(function() {
-      $('.hamburger').click(function() {
-          $(this).toggleClass('active');
     
-          if ($(this).hasClass('active')) {
-              $('.globalMenuSp').addClass('active');
-          } else {
-              $('.globalMenuSp').removeClass('active');
-          }
-      });
-    });
     
   }else{
     // それ以外の処理
@@ -86,12 +91,12 @@ $(window).on('load resize', function(){
       //スクロールが30に達したらボタン非表示
       $(window).scroll(function () {
           if ($(this).scrollTop() > 30) {
-              topBtn.slideUp();
-              topBtn.addClass('scroll-active');
+              topBtn.fadeOut();
+              // topBtn.addClass('scroll-active');
               
           } else {
-              topBtn.slideDown();
-              topBtn.removeClass('scroll-active');
+              topBtn.fadeIn();
+              // topBtn.removeClass('scroll-active');
               
              
           }
@@ -99,10 +104,11 @@ $(window).on('load resize', function(){
     });
     
     $(".header-logo").click(function(){
-      $(".header-nav, .sns-icons-header").slideToggle();
+      $(".header-nav, .sns-icons-header").fadeToggle();
       $(".header-nav, .sns-icons-header").toggleClass('scroll-active');
     });
 
+    
     
     
     
