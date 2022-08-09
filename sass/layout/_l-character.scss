@@ -123,9 +123,20 @@
     height: 200px;
 
     }
+  .card-left-img:hover {
+    background-size:contain;
+    width: 200px;
+    height: 200px;
+
+    }
     
   }
   .card-right-img {
+    background-size:contain;
+    width: 200px;
+    height: 200px;
+  }
+  .card-right-img:hover {
     background-size:contain;
     width: 200px;
     height: 200px;
