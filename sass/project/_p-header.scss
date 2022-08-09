@@ -92,6 +92,7 @@
 
 .header-nav__link-en {
   display: block;
+  font-weight: 600;
   @include g.font-size(14);
   font-family: g.$fontBilo;
 }
