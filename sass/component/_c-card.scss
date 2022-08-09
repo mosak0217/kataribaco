@@ -2,9 +2,7 @@
 
 @use "../global" as g;
 
-.card {
-  width: 300px;
-}
+
 
 .card__title {
   @include g.font-size(18);

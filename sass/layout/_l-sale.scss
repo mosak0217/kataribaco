@@ -72,9 +72,32 @@
 
 #sale {
   .card {
-    width: 210px;
+    
+    
+    .sale-img {
+
+      width: 210px;
+      height: 210px;
+      overflow: hidden;
+    }
+
+    img {
+      width: 210px;
+      height: 210px;
+      transition: 0.3s;
+    }
+
+    img:hover {
+      transform: scale(1.2);
+  }
+
+  
 
   }
+  
+   
+
+  
 }
 #sale {
   .card {
@@ -84,9 +107,9 @@
 
     }
     .card__text {
-     line-height: 0;
-
+      line-height: 0;
     }
+
 
   }
 }

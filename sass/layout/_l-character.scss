@@ -11,23 +11,51 @@
 
 .character-inner {
   margin: 0 20px;
-  text-align: center;
   background: g.$color-primary;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+ grid-template-columns: 1fr 1fr;
+  justify-items: center;
   align-items: center;
 
   .card {
+    width: 300px;
+    
     .card__title {
-      text-align: center;
+      text-align: left;
     }
     .card__text {
-      padding: 0 50px;
-      text-align: center;
+      text-align: left;
     }
   }
  
+}
+
+.card-left-img {
+  background-image: url(../img/character-2-min.jpg);
+    background-repeat:no-repeat; 
+    width: 300px;
+    height: 300px;
+    transition: .3s;
+
+}
+.card-left-img:hover {
+  background-image: url(../img/chara-hover1-min.jpg);
+  transition: .3s;
+
+}
+
+.card-right-img {
+  background-image: url(../img/character-3-min.jpg);
+    background-repeat:no-repeat; 
+    width: 300px;
+    height: 300px;
+    transition: .3s;
+
+}
+.card-right-img:hover {
+  background-image: url(../img/chara-hover2-min.jpg);
+  transition: .3s;
+
 }
 
 
@@ -45,52 +73,49 @@
 }
 
 .character-inner {
-  grid-gap: 0;
-
   .card {
     padding-bottom: 60px;
-    width: calc(50% - 50px);
-    padding: 0 232px;
-    padding-bottom: 40px;
     
   }
-  .card-right {
-    padding-left: 20px;
-  }
+
   .card-left {
-    padding-right: 20px;
+    margin-left: 90px;
+  }
+  .card-right {
+    margin-right: 90px;
   }
   
  
  
 }
+
 @include g.mq(cara) {
+  .character-inner {
+    grid-template-columns: 1fr;
+
+    .card-left {
+      margin-left: 0;
+    }
+    .card-right {
+      margin-right: 0;
+    }
+      
+}
+}
+
+@include g.mq(sp) {
 
   .character-inner {
 
-    .card {
-      padding: 0 30px;
-      padding-bottom: 40px;
-      
-    }
-   
-   
+  .card-left {
+    margin-left: 0;
+    width: 200px;
   }
-
-}
-@include g.mq(tab) {
-
-  .character-inner {
-
-    .card {
-      width: 100%;
-      padding: 0 10px;
-      padding-bottom: 40px;
-      
-    }
-   
-   
+  .card-right {
+    margin-right: 0;
+    width: 200px;
   }
-
 }
+}
+
 
